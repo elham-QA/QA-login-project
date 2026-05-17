@@ -1,33 +1,24 @@
-# Bug Reports – Login Feature (SauceDemo)
+# Bugbericht: Falsche Fehlermeldung für gesperrten Benutzer
 
-This file contains reported bugs for the login functionality.
+Webseite: https://www.saucedemo.com
 
----
+## Schritte zum Reproduzieren
+1. Benutzername eingeben: locked_out_user
+2. Passwort eingeben: secret_sauce
+3. Auf Login klicken
 
-## BUG-01: No clear error message for empty login
+## Tatsächliches Ergebnis
+"Benutzername und Passwort stimmen nicht überein"
 
-Steps to reproduce:
-- Go to login page  
-- Leave username and password empty  
-- Click on Login  
+## Erwartetes Ergebnis
+"Dieser Benutzer wurde gesperrt. Bitte kontaktieren Sie den Support."
 
-Actual Result:
-A message is shown, but not clear enough for the user.
+## Schweregrad (Severity)
+Mittel
 
-Expected Result:
-A clear validation message should appear (e.g. "Username is required").
+## Priorität (Priority)
+Hoch
 
----
-
-## BUG-02: Incorrect login shows generic error
-
-Steps to reproduce:
-- Enter invalid username  
-- Enter invalid password  
-- Click on Login  
-
-Actual Result:
-Generic error message is displayed.
-
-Expected Result:
-A clear message like "Username or Password is incorrect" should appear.
+## Umgebung
+- Browser: Chrome 120
+- Betriebssystem: Windows 11
